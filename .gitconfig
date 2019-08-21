@@ -1,0 +1,29 @@
+[core]
+    filemode = false
+    editor = vim
+    excludesfile = ~/.gitignore_global
+
+[user]
+    name = tsux2000
+    email = tsux2000@gmail.com
+
+[color]
+    ui = auto
+
+[merge]
+    tool = vimdiff
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    bra = branch
+
+[gui]
+    encoding = utf-8
+
+[receive]
+    denyNonFastforwards = false
+
+[core]
+    quotepath = false

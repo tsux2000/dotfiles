@@ -1,0 +1,39 @@
+# EditorConfigファイル
+
+# このファイルのあるディレクトリをルートディレクトリとして設定（true,false）
+# エディタはEditorConfigファイルを探してルートディレクトリへ遡るので
+# ここがfalseだとさらに上の階層のディレクトリにあるEditorConfigファイルを探してしまう
+root = true
+
+# 全ファイル共通設定項目
+[*]
+# インデントの種類の指定（space,tab）
+indent_style = space
+# インデントサイズの指定
+indent_size = 4
+# 改行コードの指定（lf,cr,crlf）
+end_of_line = lf
+# 文字コードの指定
+charset = utf-8
+# 行末にある空白を削除（true,false）
+trim_trailing_whitespace = true
+# 最終行に空行を挿入（true,false）
+insert_final_newline = true
+
+# Markdownファイル
+[*.md]
+trim_trailing_whitespace = false
+
+# html/css/jsファイル
+[*.{html,css,js}]
+indent_size = 2
+
+# ファイル指定の表現方法
+# | セレクタ      | 意味                |
+# |:-------------:|:-------------------:|
+# | *             | "/"を含まない文字列 |
+# | **            | 文字列              |
+# | ?             | 一文字              |
+# | [name]        | 一致                |
+# | [!name]       | 不一致              |
+# | {name1,name2} | または              |

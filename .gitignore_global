@@ -1,0 +1,6 @@
+# Macの設定ファイル関連
+.DS_Store
+
+# Pythonのキャッシュ関連
+__pycache__/
+*.pyc
